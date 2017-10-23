@@ -165,28 +165,28 @@ protected function APIRequest($method, $api){
     }
 
     public function postAtms($bank_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/atms');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/atms');
     }
     public function postBanks(){
-      self::APIRequest("POST". 'api/banks');
+      self::APIRequest("POST", 'api/banks');
     }
     public function postBranches($bank_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/branches');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/branches');
     }
     public function postCustomers($bank_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/customers');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/customers');
     }
     public function postMessages($bank_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/messages');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/messages');
     }
     public function postMetadata(){
-      self::APIRequest("POST". 'api/metadata');
+      self::APIRequest("POST", 'api/metadata');
     }
     public function postOtherAccounts($bank_id, $account_id, $view_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/other_accounts');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/other_accounts');
     }
     public function postProducts($bank_id){
-      self::APIRequest("POST". 'api/banks/'.$bank_id.'/products');
+      self::APIRequest("POST", 'api/banks/'.$bank_id.'/products');
     }
 
     public function putAccount($bank_id){
