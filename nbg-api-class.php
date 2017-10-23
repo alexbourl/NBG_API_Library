@@ -1,9 +1,9 @@
 <?php
 
 /*
- *   _______________________________________________________
+ *         _______________________________________________________
  *	|                                                       |
- *	|	  National Bank of Greece (NBG) API Library in PHP.	  |
+ *	|   National Bank of Greece (NBG) API Library in PHP.   |
  *	|_______________________________________________________|
  *
  *		Created on : October 21, 2017, 02:06:20 PM
