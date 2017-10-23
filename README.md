@@ -1,5 +1,6 @@
 # NBG API Library
-National Bank of Greece (NBG) API Library in PHP
+National Bank of Greece (NBG) API Library in PHP.<br>
+Library Created By Alex Bourlivas.
 <h2>Installation</h2>
 
 ```php
