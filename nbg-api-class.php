@@ -9,6 +9,7 @@
  *		Created on : October 21, 2017, 02:06:20 PM
  *		Author	   : Alexandros Bourlivas
  *
+ *                  API Owned By https://nbgdemo.portal.azure-api.net/
  */
 
 class NBGiBankAPI {
