@@ -11,92 +11,92 @@ $api = new NBGiBankAPI();
 ```
 <h2>Methods</h2>
 <h3>DELETE</h3>
-    deleteAccounts($bank_id, $account_id)
-    deleteAtms($bank_id, $atm_id)
-    deleteBanks($bank_id)
-    deleteBranches($bank_id, $branch_id)
-    deleteCustomers($bank_id, $customer_id)
-    deleteMessanges($bank_id, $message_id)
-    deleteMetadata()
-    deleteOtherAccounts($bank_id, $account_id, $view_id, $other_account_id)
-    deleteProducts($bank_id, $product_id)
-    deleteTransactionType($bank_id, $account_id, $view_id, $transaction_id, $type)
-    deleteTransactionTypeID($bank_id, $account_id, $view_id, $transaction_id, $type, $type_id)
-    deleteView($bank_id, $view_id)
-    deleteViewAccount($bank_id, $account_id, $view_id)
+    deleteAccounts($bank_id, $account_id)<br>
+    deleteAtms($bank_id, $atm_id)<br>
+    deleteBanks($bank_id)<br>
+    deleteBranches($bank_id, $branch_id)<br>
+    deleteCustomers($bank_id, $customer_id)<br>
+    deleteMessanges($bank_id, $message_id)<br>
+    deleteMetadata()<br>
+    deleteOtherAccounts($bank_id, $account_id, $view_id, $other_account_id)<br>
+    deleteProducts($bank_id, $product_id)<br>
+    deleteTransactionType($bank_id, $account_id, $view_id, $transaction_id, $type)<br>
+    deleteTransactionTypeID($bank_id, $account_id, $view_id, $transaction_id, $type, $type_id)<br>
+    deleteView($bank_id, $view_id)<br>
+    deleteViewAccount($bank_id, $account_id, $view_id)<br>
     
 <h3>GET</h3>
-    getAccount($bank_id, $account_id, $view_id)
-    getAccountIDfromIBAN($iban)
-    getAccounts($account_id)
-    getAccountsAllBanksPrivatePublic($private_public)
-    getAccountsPrivatePublic($bank_id, $private_public)
-    getAccountsScope($bank_id, $account_id, $view_id, $scope)
-    getAtm($bank_id, $atm_id)
-    getAtms($bank_id)
-    getBank($bank_id)
-    getBanks()
-    getBranch($bank_id, $branch_id)
-    getBranches($bank_id)
-    getCustomer($bank_id, $customer_id)
-    getCustomerOwner($bank_id)
-    getCustomers($bank_id)
-    getMessage($bank_id, $message_id)
-    getMessages($bank_id)
-    getMessagesOwner($bank_id)
-    getMetadata()
-    getOtherAccount($bank_id, $account_id, $view_id, $other_account_id)
-    getOtherAccounts($bank_id, $account_id, $view_id)
-    getProduct($bank_id, $product_id)
-    getProducts($bank_id)
-    getRegisterForm()
-    getTransaction($bank_id, $account_id, $view_id, $transaction_id)
-    getTransactions($bank_id, $account_id, $view_id)
-    getTransactionsMetadataType($bank_id, $account_id, $view_id, $transaction_id, $type)
-    getTransactionsRequest($bank_id, $account_id, $view_id)
-    getTransactionsRequestTypes($bank_id, $account_id, $view_id)
-    getUsers()
-    getViews($bank_id)
-    getWeb()
+    getAccount($bank_id, $account_id, $view_id)<br>
+    getAccountIDfromIBAN($iban)<br>
+    getAccounts($account_id)<br>
+    getAccountsAllBanksPrivatePublic($private_public)<br>
+    getAccountsPrivatePublic($bank_id, $private_public)<br>
+    getAccountsScope($bank_id, $account_id, $view_id, $scope)<br>
+    getAtm($bank_id, $atm_id)<br>
+    getAtms($bank_id)<br>
+    getBank($bank_id)<br>
+    getBanks()<br>
+    getBranch($bank_id, $branch_id)<br>
+    getBranches($bank_id)<br>
+    getCustomer($bank_id, $customer_id)<br>
+    getCustomerOwner($bank_id)<br>
+    getCustomers($bank_id)<br>
+    getMessage($bank_id, $message_id)<br>
+    getMessages($bank_id)<br>
+    getMessagesOwner($bank_id)<br>
+    getMetadata()<br>
+    getOtherAccount($bank_id, $account_id, $view_id, $other_account_id)<br>
+    getOtherAccounts($bank_id, $account_id, $view_id)<br>
+    getProduct($bank_id, $product_id)<br>
+    getProducts($bank_id)<br>
+    getRegisterForm()<br>
+    getTransaction($bank_id, $account_id, $view_id, $transaction_id)<br>
+    getTransactions($bank_id, $account_id, $view_id)<br>
+    getTransactionsMetadataType($bank_id, $account_id, $view_id, $transaction_id, $type)<br>
+    getTransactionsRequest($bank_id, $account_id, $view_id)<br>
+    getTransactionsRequestTypes($bank_id, $account_id, $view_id)<br>
+    getUsers()<br>
+    getViews($bank_id)<br>
+    getWeb()<br>
     
 <h3>POST</h3>
-    postAtms($bank_id)
-    postBanks()
-    postBranches($bank_id)
-    postCustomers($bank_id)
-    postMessages($bank_id)
-    postMetadata()
-    postOtherAccounts($bank_id, $account_id, $view_id)
-    postProducts($bank_id)
+    postAtms($bank_id)<br>
+    postBanks()<br>
+    postBranches($bank_id)<br>
+    postCustomers($bank_id)<br>
+    postMessages($bank_id)<br>
+    postMetadata()<br>
+    postOtherAccounts($bank_id, $account_id, $view_id)<br>
+    postProducts($bank_id)<br>
     
 <h3>PUT</h3>
-    putAccount($bank_id)
-    putAccountID($bank_id, $account_id)
-    putAtm($bank_id)
-    putAtmID($bank_id, $atm_id)
-    putBank()
-    putBankID($bank_id)
-    putBranch($bank_id)
-    putBranchID($bank_id, $branch_id)
-    putCustomer($bank_id)
-    putCustomerID($bank_id, $customer_id)
-    putMessage($bank_id)
-    putMessageID($bank_id, $message_id)
-    putMessageIDtoCustomer($bank_id, $customer_id, $message_id)
-    putMessageToCustomer($bank_id, $customer_id)
-    putMetadata()
-    putOtherAccount($bank_id, $account_id, $view_id)
-    putOtherAccountID($bank_id, $account_id, $view_id, $other_account_id)
-    putProduct($bank_id)
-    putProductID($bank_id, $product_id)
-    putTransactions($bank_id, $account_id, $view_id, $transaction_id, $type)
-    putTransactionsRequest($bank_id, $type)
-    putTransactionsRequestAccount($bank_id, $account_id, $view_id, $type)
-    putUser()
-    putUserID($bank_id)
-    putView($bank_id)
-    putViewAccount($bank_id, $account_id)
-    putViewID($bank_id, $view_id)
+    putAccount($bank_id)<br>
+    putAccountID($bank_id, $account_id)<br>
+    putAtm($bank_id)<br>
+    putAtmID($bank_id, $atm_id)<br>
+    putBank()<br>
+    putBankID($bank_id)<br>
+    putBranch($bank_id)<br>
+    putBranchID($bank_id, $branch_id)<br>
+    putCustomer($bank_id)<br>
+    putCustomerID($bank_id, $customer_id)<br>
+    putMessage($bank_id)<br>
+    putMessageID($bank_id, $message_id)<br>
+    putMessageIDtoCustomer($bank_id, $customer_id, $message_id)<br>
+    putMessageToCustomer($bank_id, $customer_id)<br>
+    putMetadata()<br>
+    putOtherAccount($bank_id, $account_id, $view_id)<br>
+    putOtherAccountID($bank_id, $account_id, $view_id, $other_account_id)<br>
+    putProduct($bank_id)<br>
+    putProductID($bank_id, $product_id)<br>
+    putTransactions($bank_id, $account_id, $view_id, $transaction_id, $type)<br>
+    putTransactionsRequest($bank_id, $type)<br>
+    putTransactionsRequestAccount($bank_id, $account_id, $view_id, $type)<br>
+    putUser()<br>
+    putUserID($bank_id)<br>
+    putView($bank_id)<br>
+    putViewAccount($bank_id, $account_id)<br>
+    putViewID($bank_id, $view_id)<br>
     putViewIDAccount($bank_id, $account_id, $view_id)
 
 }
