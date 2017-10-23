@@ -1,7 +1,7 @@
 <?php
 
 /*
- *         _______________________________________________________
+ *        _______________________________________________________
  *	|                                                       |
  *	|   National Bank of Greece (NBG) API Library in PHP.   |
  *	|_______________________________________________________|
@@ -65,8 +65,6 @@ protected function APIRequest($method, $api){
     public function deleteViewAccount($bank_id, $account_id, $view_id){
       self::APIRequest("DELETE", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/views/'.$view_id);
     }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function getAccount($bank_id, $account_id, $view_id){
       self::APIRequest("GET", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/account');
@@ -165,8 +163,6 @@ protected function APIRequest($method, $api){
       self::APIRequest("GET", '');
     }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     public function postAtms($bank_id){
       self::APIRequest("POST". 'api/banks/'.$bank_id.'/atms');
     }
@@ -191,8 +187,6 @@ protected function APIRequest($method, $api){
     public function postProducts($bank_id){
       self::APIRequest("POST". 'api/banks/'.$bank_id.'/products');
     }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function putAccount($bank_id){
       self::APIRequest("PUT", 'api/banks/'.$bank_id.'/accounts');
