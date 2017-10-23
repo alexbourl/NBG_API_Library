@@ -12,6 +12,7 @@ $api = new NBGiBankAPI();
 ```
 <h2>Methods</h2>
 <h3>DELETE</h3>
+```php
     deleteAccounts($bank_id, $account_id)<br>
     deleteAtms($bank_id, $atm_id)<br>
     deleteBanks($bank_id)<br>
@@ -25,8 +26,9 @@ $api = new NBGiBankAPI();
     deleteTransactionTypeID($bank_id, $account_id, $view_id, $transaction_id, $type, $type_id)<br>
     deleteView($bank_id, $view_id)<br>
     deleteViewAccount($bank_id, $account_id, $view_id)<br>
-
+```
 <h3>GET</h3>
+```php
     getAccount($bank_id, $account_id, $view_id)<br>
     getAccountIDfromIBAN($iban)<br>
     getAccounts($account_id)<br>
@@ -59,8 +61,9 @@ $api = new NBGiBankAPI();
     getUsers()<br>
     getViews($bank_id)<br>
     getWeb()<br>
-    
+```
 <h3>POST</h3>
+```php
     postAtms($bank_id)<br>
     postBanks()<br>
     postBranches($bank_id)<br>
@@ -69,8 +72,9 @@ $api = new NBGiBankAPI();
     postMetadata()<br>
     postOtherAccounts($bank_id, $account_id, $view_id)<br>
     postProducts($bank_id)<br>
-    
+```
 <h3>PUT</h3>
+```php
     putAccount($bank_id)<br>
     putAccountID($bank_id, $account_id)<br>
     putAtm($bank_id)<br>
@@ -99,3 +103,4 @@ $api = new NBGiBankAPI();
     putViewAccount($bank_id, $account_id)<br>
     putViewID($bank_id, $view_id)<br>
     putViewIDAccount($bank_id, $account_id, $view_id)
+```
