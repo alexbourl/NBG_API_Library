@@ -1,2 +1,7 @@
-# NBG_API_Library
+# NBG API Library
 National Bank of Greece (NBG) API Library in PHP
+<h1>Installation</h1>
+<hr>
+```
+include_once('nbg-api-class');
+```
