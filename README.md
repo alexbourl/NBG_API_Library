@@ -13,6 +13,7 @@ $api = new NBGiBankAPI();
 <h3>DELETE</h3>
 ```php
     deleteAccounts($bank_id, $account_id)<br>
+```
     deleteAtms($bank_id, $atm_id)<br>
     deleteBanks($bank_id)<br>
     deleteBranches($bank_id, $branch_id)<br>
@@ -25,7 +26,7 @@ $api = new NBGiBankAPI();
     deleteTransactionTypeID($bank_id, $account_id, $view_id, $transaction_id, $type, $type_id)<br>
     deleteView($bank_id, $view_id)<br>
     deleteViewAccount($bank_id, $account_id, $view_id)<br>
-    ```
+
 <h3>GET</h3>
 ```php
     getAccount($bank_id, $account_id, $view_id)<br>
