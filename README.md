@@ -1,6 +1,7 @@
 # NBG API Library
 National Bank of Greece (NBG) API Library in PHP.<br>
-Library Created By Alexandros Bourlivas.
+Library Created By Alexandros Bourlivas.<br>
+API Owned By https://nbgdemo.portal.azure-api.net/
 <h2>Installation</h2>
 
 ```php
