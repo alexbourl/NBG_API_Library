@@ -1,7 +1,7 @@
 <?php
 
 /*
- *       _______________________________________________________
+ *        _______________________________________________________
  *	|                                                       |
  *	|   National Bank of Greece (NBG) API Library in PHP.   |
  *	|_______________________________________________________|
@@ -9,7 +9,6 @@
  *		Created on : October 21, 2017, 02:06:20 PM
  *		Author	   : Alexandros Bourlivas
  *
- *                  API Owned By https://nbgdemo.portal.azure-api.net/
  */
 
 class NBGiBankAPI {
@@ -18,13 +17,13 @@ protected function APIRequest($method, $api){
 
           $curl = curl_init();
           curl_setopt_array($curl, array(
-              CURLOPT_HTTPHEADER  => array('Ocp-Apim-Subscription-Key: {YOUR-KEY}', 'Content-Type: application/json'),
+              CURLOPT_HTTPHEADER  => array('Ocp-Apim-Subscription-Key: {YOUR-KEY}', 'Track-ID: {trackid uuid}', 'Auth-Provider-Name: {auth provider name}', 'Auth-ID: {auth id}'),
               CURLOPT_URL => 'https://nbgdemo.azure-api.net/nodeopenapi/'.$api,
               CURLOPT_CUSTOMREQUEST => $method
           ));
-          $resp = curl_exec($curl);
+          $result = curl_exec($curl);
           curl_close($curl);
-
+		  var_dump(json_decode($result, true);
   }
 
     public function deleteAccounts($bank_id, $account_id){
@@ -66,6 +65,8 @@ protected function APIRequest($method, $api){
     public function deleteViewAccount($bank_id, $account_id, $view_id){
       self::APIRequest("DELETE", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/views/'.$view_id);
     }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function getAccount($bank_id, $account_id, $view_id){
       self::APIRequest("GET", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/account');
@@ -164,30 +165,34 @@ protected function APIRequest($method, $api){
       self::APIRequest("GET", '');
     }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public function postAtms($bank_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/atms');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/atms');
     }
     public function postBanks(){
-      self::APIRequest("POST", 'api/banks');
+      self::APIRequest("POST". 'api/banks');
     }
     public function postBranches($bank_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/branches');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/branches');
     }
     public function postCustomers($bank_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/customers');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/customers');
     }
     public function postMessages($bank_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/messages');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/messages');
     }
     public function postMetadata(){
-      self::APIRequest("POST", 'api/metadata');
+      self::APIRequest("POST". 'api/metadata');
     }
     public function postOtherAccounts($bank_id, $account_id, $view_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/other_accounts');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/accounts/'.$account_id.'/'.$view_id.'/other_accounts');
     }
     public function postProducts($bank_id){
-      self::APIRequest("POST", 'api/banks/'.$bank_id.'/products');
+      self::APIRequest("POST". 'api/banks/'.$bank_id.'/products');
     }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function putAccount($bank_id){
       self::APIRequest("PUT", 'api/banks/'.$bank_id.'/accounts');
