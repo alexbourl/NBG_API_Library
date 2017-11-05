@@ -6,7 +6,7 @@ API Owned By https://nbgdemo.portal.azure-api.net/
 
 ```php
 <?php
-include_once('nbg-api-class');
+include_once('nbg-api-class.php');
 
 $api = new NBGiBankAPI();
 ?>
