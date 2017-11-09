@@ -8,7 +8,7 @@ API Owned By https://nbgdemo.portal.azure-api.net/
 <?php
 include_once('nbg-api-class.php');
 
-$api = new NBGiBankAPI();
+$api = new NBGiBankAPI("APIKEY (Required)","TRACKID (optional)", "Auth-Provider-Name (optional)", "Auth-ID (optional)");
 ?>
 ```
 <h2>Methods</h2>
